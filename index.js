@@ -22,7 +22,7 @@ app.use('/paystack', paystackPayment)
 const port = process.env.PORT
 const start = async () =>{
     try {
-        // await connectDB(process.env.URL_STRING, console.log("Connection Successful"))
+        await connectDB(process.env.URL_STRING, console.log("Connection Successful"))
         app.listen(port, console.log(`Server is Live at port ${port}`))
     } catch (error) {
         console.log(error);
