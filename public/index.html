@@ -81,7 +81,7 @@
 
       <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
         <div class="row justify-content-center">
-          <div class="col-lg-8">
+          <div class="col-lg-8" style="padding-top: 6rem;">
             <h2 style="text-shadow: 3px 3px 1px #fff;">John Sunday</h2>
             <p style="color: #f8f8f8;text-shadow: 1px 1px 12px #000000; font-weight: 900;">I'm a professional
               <span id="type-effect">
@@ -94,12 +94,33 @@
 
               <a href="./portfolio" class="ripple btn-get-started">Explore</a>
             </div>
+            <div class="recent-con" style="">
+              <div class="recent-title">
+                <h4>Most Recent Projects (2025)</h4>
+              </div>
+              <div class="recent">
+                <ul>
+                  <a href="https://tetajobs.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <li>Teta Jobs</li>
+                  </a>
+                  <a href="http://bit.ly/44jJUHB" target="_blank" rel="noopener noreferrer">
+                    <li>Buy.social (Wordpress)</li>
+                  </a>
+                  <a href="http://bit.ly/4kaT2nN" target="_blank" rel="noopener noreferrer">
+                    <li>Eaglex Law (Wordpress)</li>
+                  </a>
+                </ul>
+              </div>
 
+
+            </div>
           </div>
         </div>
       </div>
 
     </section><!-- /Hero Section -->
+
+
 
   </main>
 
@@ -132,6 +153,68 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
+  <style>
+    .recent-con {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      /* right: 75%; */
+      /* width: 30%; */
+      padding-top: 6rem;
+      margin: auto;
+    }
+
+    .recent-title {
+      text-decoration: overline;
+    }
+
+    .recent-title h4 {
+      text-decoration: overline;
+      color: rgb(255, 196, 0);
+      font-weight: 900;
+      /* text-shadow: 0px 0px 5px #ffffff; */
+    }
+
+    .recent ul a {
+      /* color: rgb(187, 243, 187); */
+      color: rgb(255, 196, 0);
+      padding: .25rem 2rem .25rem 2rem;
+      transition: 1s;
+      font-weight: 500;
+
+    }
+
+    .recent ul {
+      list-style: circle;
+      display: flex;
+      /* flex-direction: column; */
+      /* background-color: green; */
+      justify-content: center;
+      padding: .25rem;
+      /* gap: 2rem; */
+
+    }
+
+    @media screen and (max-width:990px) {
+      .recent ul {
+        list-style: circle;
+        flex-direction: column;
+        display: flex;
+        /* background-color: green; */
+        justify-content: center;
+        padding: .25rem;
+        /* gap: 2rem; */
+
+      }
+    }
+
+    .recent ul a:hover {
+      background-color: #181515;
+      border-radius: 10px;
+      text-decoration: underline;
+
+    }
+  </style>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
